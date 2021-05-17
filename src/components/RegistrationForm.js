@@ -3,6 +3,7 @@ import FormControl from './FormControl';
 import './RegistrationForm.css';
 
 const RegistrationForm = () => {
+    // useState to track form data and error message
     const [formControl, setFormControl] = useState({
         username: ['', ''],
         email: ['', ''],
@@ -10,6 +11,7 @@ const RegistrationForm = () => {
         confirmPassword: ['', '']
     });
 
+    // Function for handling submit to validate and update errorState
     const handleSubmit = (event) => {
         event.preventDefault();
         const { username, email, password, confirmPassword } = formControl;

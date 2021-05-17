@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-
 const FormControl = ({ fieldName, setFormControl, formControl }) => {
     const errMsg = formControl[fieldName][1];
     let style = {};
     let errStyle = {};
 
+    // changes input and error message styling based on the error message state
     if (errMsg === '') {
         style = null;
         errStyle = { visibility: 'hidden' };
