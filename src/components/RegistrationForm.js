@@ -53,6 +53,8 @@ const RegistrationForm = () => {
             newForm.confirmPassword[1] = 'OK';
             setFormControl(newForm);
         }
+
+        console.log(formControl);
     };
 
     return (
